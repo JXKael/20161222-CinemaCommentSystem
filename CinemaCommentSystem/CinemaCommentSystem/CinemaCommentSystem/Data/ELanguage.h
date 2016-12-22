@@ -6,7 +6,8 @@ enum ELanguage
 	No_data,
 	Chinese,
 	English,
-	France
+	French,
+	American
 };
 
 #endif

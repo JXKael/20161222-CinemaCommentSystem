@@ -8,20 +8,25 @@ class ParameterString
 {
 private:
 	// 单例模式访问
-	ParameterString(){ this->instance = new ParameterString(); }
+	ParameterString();
 	// 静态实例
-	ParameterString static *instance;
+	static ParameterString *instance;
 public:
-	inline ParameterString static *Instance(){ return ParameterString::instance; }
-	~ParameterString();		// 析构函数
+	static ParameterString *Instance()
+	{
+		if (!instance)
+			instance = new ParameterString();
+
+		return instance;
+	}
+	inline ~ParameterString() { delete instance; }		// 析构函数
 
 
-// 参数数据
+// 参数数据，在此处添加定义的字符串
 public:
 	string _no_data = "no data";
 };
 
-#define para ParameterString
-#define paras para::Instance()
+#define _NO_DATA "no data"
 
 #endif

@@ -1,7 +1,7 @@
 ﻿using namespace std;
 
-#ifndef CINEMATYPE_H
-#define CINEMATYPE_H
+#ifndef CINEMA_TYPE_H
+#define CINEMA_TYPE_H
 
 class CinemaType
 {

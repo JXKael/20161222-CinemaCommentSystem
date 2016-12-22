@@ -27,12 +27,24 @@
     <ClInclude Include="Data\ParameterString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Tools\LinkList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\LinkNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Data\Cinema.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Data\CinemaType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -23,7 +23,7 @@ private:
 	float score;		// 评分
 	CinemaType *type;	// 类别
 
-// get function
+// Get function
 public:
 	inline string GetId(){ return this->id; }
 	inline string GetName(){ return this->name; }

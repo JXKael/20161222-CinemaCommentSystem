@@ -68,10 +68,14 @@
     <ClInclude Include="Data\CinemaType.h" />
     <ClInclude Include="Data\ELanguage.h" />
     <ClInclude Include="Data\ParameterString.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="Tools\LinkList.h" />
+    <ClInclude Include="Tools\LinkNode.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Data\Cinema.cpp" />
     <ClCompile Include="Data\CinemaType.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

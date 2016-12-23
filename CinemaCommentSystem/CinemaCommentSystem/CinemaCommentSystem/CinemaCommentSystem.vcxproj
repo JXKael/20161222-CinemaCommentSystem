@@ -69,8 +69,10 @@
     <ClInclude Include="Data\ELanguage.h" />
     <ClInclude Include="Data\ParameterString.h" />
     <ClInclude Include="Main.h" />
+    <ClInclude Include="SystemController.h" />
     <ClInclude Include="Tools\LinkList.h" />
     <ClInclude Include="Tools\LinkNode.h" />
+    <ClInclude Include="ViewController.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Data\Cinema.cpp" />

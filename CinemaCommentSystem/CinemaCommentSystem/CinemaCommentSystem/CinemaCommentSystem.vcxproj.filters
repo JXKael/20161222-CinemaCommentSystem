@@ -36,6 +36,12 @@
     <ClInclude Include="Main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SystemController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Data\Cinema.cpp">

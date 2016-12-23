@@ -9,6 +9,7 @@ Cinema::Cinema()
 	this->language = ELanguage::No_data;
 	this->year = 0;
 	this->score = 0;
+	this->scoreNum = 0;
 	this->type = new CinemaType();
 }
 

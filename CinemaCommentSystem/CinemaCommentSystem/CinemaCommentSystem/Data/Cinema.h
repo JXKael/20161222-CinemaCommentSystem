@@ -21,6 +21,7 @@ private:
 	ELanguage language;	// 语言
 	int year;			// 年份
 	float score;		// 评分
+	int scoreNum;		// 评分人数
 	CinemaType *type;	// 类别
 
 // Get function

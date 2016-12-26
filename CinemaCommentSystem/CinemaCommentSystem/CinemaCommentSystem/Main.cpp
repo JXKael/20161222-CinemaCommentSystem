@@ -4,7 +4,9 @@ using namespace std;
 void main()
 {
 	SystemController *systemController = new SystemController();
-	ViewController *viewController = new ViewController();
-	
-	viewController->ShowCurrentPage();
+	ViewController * viewController = new ViewController();
+	while (true)
+	{
+		viewController->UpdateView();
+	}
 }

@@ -1,29 +1,31 @@
+#ifndef PAGE_H
+#define PAGE_H
+
 #include <iostream>
 #include <string>
 #include <cstddef>
 #include "..\Data\ParameterString.h"
 using namespace std;
 
-#ifndef PAGE_H
-#define PAGE_H
-
 enum EPage
 {
-	welcome
+	E_PAGE_WELCOME,
+	E_PAGE_MAIN
 };
 
 class Page
 {
 public:
-	Page() : title(""){}
+	Page() : title("") {}
+	Page(const int index) : pageIndex(index) {}
 	~Page(){ title.clear(); }
 protected:
 	string title;
+	int pageIndex;
 public:
 	virtual void SetTitle(string title) = 0;
 	virtual void Show() = 0;
-	virtual void WaitInput() = 0;
-	virtual void Input(const int input) = 0;
+	virtual EPage WaitInput() = 0;
 };
 
 #endif

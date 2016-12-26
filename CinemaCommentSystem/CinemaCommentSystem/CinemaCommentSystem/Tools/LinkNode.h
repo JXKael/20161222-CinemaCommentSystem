@@ -1,8 +1,8 @@
-#include <cstddef>
-using namespace std;
-
 #ifndef LINK_NODE_H
 #define LINK_NODE_H
+
+#include <cstddef>
+using namespace std;
 
 template<typename T> class LinkNode
 {

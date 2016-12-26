@@ -81,6 +81,7 @@
     <ClCompile Include="Data\Cinema.cpp" />
     <ClCompile Include="Data\CinemaType.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SystemController.cpp" />
     <ClCompile Include="ViewController.cpp" />
     <ClCompile Include="View\PageWelcome.cpp" />
   </ItemGroup>

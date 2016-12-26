@@ -1,30 +1,83 @@
 #include "ViewController.h"
 
-
 ViewController::ViewController()
 {
-	currentPage = new PageWelcome();
+	pageNum = 0;
+	isCurrendShowed = false;
+	
+	currentPage = new PageWelcome(pageNum);
+	pageStack[pageNum] = currentPage;
+	++pageNum;
 }
 
 ViewController::~ViewController()
 {
 	if (NULL != currentPage)
 		delete currentPage;
+
+	for (int i = 0; i < 10; ++i)
+	{
+		if (NULL != currentPage)
+			delete pageStack[i];
+	}
+}
+
+void ViewController::UpdateView()
+{
+	ShowCurrentPage();
+}
+
+void ViewController::ShowCurrentPage()
+{
+	if (NULL != currentPage)
+	{
+		if (!isCurrendShowed)
+		{
+			currentPage->Show();
+			isCurrendShowed = true;
+			GoTo(this->WaitInput());
+		}
+	}
+}
+
+EPage ViewController::WaitInput()
+{
+	if (NULL != currentPage)
+		return currentPage->WaitInput();
 }
 
 void ViewController::GoTo(EPage page)
 {
 	switch (page)
 	{
-	case welcome:
-		if (NULL != currentPage)
-			delete currentPage;
-		currentPage = new PageWelcome();
+	case E_PAGE_WELCOME:
+		currentPage = new PageWelcome(pageNum);
+		break;
+	case E_PAGE_MAIN:
+		currentPage = new PageWelcome(pageNum);
 		break;
 	default:
+		currentPage = NULL;
 		break;
 	}
 
 	if (NULL != currentPage)
-		this->ShowCurrentPage();
+	{
+		pageStack[pageNum] = currentPage;
+		++pageNum;
+		isCurrendShowed = false;
+	}
+}
+
+void ViewController::Back()
+{
+	if (pageNum > 1)
+	{
+		delete currentPage;
+		pageStack[pageNum - 1] = NULL;
+		--pageNum;
+
+		currentPage = pageStack[pageNum - 1];
+		isCurrendShowed = false;
+	}
 }

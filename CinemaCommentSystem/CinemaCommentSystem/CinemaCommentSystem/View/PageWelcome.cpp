@@ -5,6 +5,11 @@ PageWelcome::PageWelcome() : Page()
 	this->title = "Welcome!";
 }
 
+PageWelcome::PageWelcome(const int index) : Page(index)
+{
+	this->title = "Welcome!";
+}
+
 PageWelcome::~PageWelcome()
 {
 
@@ -17,19 +22,16 @@ void PageWelcome::SetTitle(string title)
 void PageWelcome::Show()
 {
 	system("cls");
-	cout << _TITLE << ": " << this->title << endl;
+	cout << _TITLE << ": " << this->title << this->pageIndex << endl;
 	cout << _FULL_LINE << endl;
-	cout << "                                    " << _WELCOME_USE << endl;
+	cout << "                                    " << "»¶Ó­Ê¹ÓÃ" << endl;
 	cout << "                                  " << _APP_NAME << endl;
-	cout << _FULL_LINE << endl;
-	system("pause");
+	cout << endl << _FULL_LINE << endl;
+}
 
-}
-void PageWelcome::WaitInput()
+EPage PageWelcome::WaitInput()
 {
-	return;
-}
-void PageWelcome::Input(const int input)
-{
-	return;
+	system("pause");
+	EPage nextPage = E_PAGE_MAIN;
+	return nextPage;
 }

@@ -1,9 +1,9 @@
+#ifndef LINK_LIST_H
+#define LINK_LIST_H
+
 #include <iostream>
 #include "LinkNode.h"
 using namespace std;
-
-#ifndef LINK_LIST_H
-#define LINK_LIST_H
 
 template<typename T> class LinkList
 {

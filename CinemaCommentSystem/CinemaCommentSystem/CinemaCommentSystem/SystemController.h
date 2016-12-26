@@ -1,3 +1,6 @@
+#ifndef SYSTEM_CONTROLLER_H
+#define SYSTEM_CONTROLLER_H
+
 #include <iostream>
 
 #include "Data\Cinema.h"
@@ -15,13 +18,6 @@ public:
 	~SystemController();
 
 private:
-
 };
 
-SystemController::SystemController()
-{
-}
-
-SystemController::~SystemController()
-{
-}
+#endif

@@ -1,11 +1,10 @@
+#ifndef VIEW_CONTROLLER_H
+#define VIEW_CONTROLLER_H
+
 #include <iostream>
 #include <cstdlib>
 #include <cstddef>
-#include "View\Page.h"
 #include "View\Views.h"
-
-#ifndef VIEW_CONTROLLER_H
-#define VIEW_CONTROLLER_H
 
 class ViewController
 {
@@ -14,11 +13,17 @@ public:
 	~ViewController();
 
 private:
+	Page *pageStack[10];
+	int pageNum;
+	bool isCurrendShowed;
 	Page *currentPage;
 
 public:
-	inline void ShowCurrentPage(){ currentPage->Show(); }
+	void UpdateView();
+	void ShowCurrentPage();
+	EPage WaitInput();
 	void GoTo(EPage page);
+	void Back();
 };
 
 #endif

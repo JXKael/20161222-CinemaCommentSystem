@@ -1,11 +1,11 @@
-﻿#include <string>
+﻿#ifndef CINEMA_H
+#define CINEMA_H
+
+#include <string>
 #include "ELanguage.h"
 #include "CinemaType.h"
 #include "ParameterString.h"
 using namespace std;
-
-#ifndef CINEMA_H
-#define CINEMA_H
 
 class Cinema
 {

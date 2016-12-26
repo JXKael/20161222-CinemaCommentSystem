@@ -59,13 +59,13 @@ private:
 		else
 		{
 			pEnd->SetNext(node);
-			pEnd = node;
+			pEnd = pEnd->PNext();
 		}
 		++Count;
 	}
 public:
 	// 在链表末尾增加一个元素
-	void Add(T &element)
+	void Add(const T &element)
 	{
 		LinkNode<T> *newNode = new LinkNode<T>(element);
 		this->Add(newNode);

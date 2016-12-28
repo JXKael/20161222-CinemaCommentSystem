@@ -2,13 +2,26 @@
 
 ViewController::ViewController()
 {
-	pageNum = 0;
-	isCurrendShowed = false;
+	this->pageNum = 0;
+	this->systemController = NULL;
+	this->isCurrendShowed = false;
 	
-	currentPage = new PageWelcome(pageNum);
-	pageStack[pageNum] = currentPage;
+	this->currentPage = new PageWelcome(pageNum);
+	this->pageStack[pageNum] = currentPage;
 	++pageNum;
 }
+
+ViewController::ViewController(SystemController *systemController)
+{
+	this->pageNum = 0;
+	this->systemController = systemController;
+	this->isCurrendShowed = false;
+
+	this->currentPage = new PageWelcome(pageNum);
+	this->pageStack[pageNum] = currentPage;
+	++pageNum;
+}
+
 
 ViewController::~ViewController()
 {

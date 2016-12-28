@@ -44,10 +44,14 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -64,6 +68,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DataController.h" />
     <ClInclude Include="Data\Cinema.h" />
     <ClInclude Include="Data\CinemaType.h" />
     <ClInclude Include="Data\ELanguage.h" />
@@ -78,6 +83,7 @@
     <ClInclude Include="View\Views.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DataController.cpp" />
     <ClCompile Include="Data\Cinema.cpp" />
     <ClCompile Include="Data\CinemaType.cpp" />
     <ClCompile Include="Main.cpp" />

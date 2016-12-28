@@ -1,13 +1,15 @@
 ﻿#ifndef ELANGUAGE_H
 #define ELANGUAGE_H
 
-enum ELanguage
+namespace ccs
 {
-	No_data,
-	Chinese,
-	English,
-	French,
-	American
-};
+	enum ELanguage {
+		No_data,
+		Chinese,
+		English,
+		French,
+		American
+	};
+}
 
 #endif

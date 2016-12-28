@@ -3,21 +3,21 @@
 
 #include <iostream>
 
-#include "Data\Cinema.h"
-#include "Data\CinemaType.h"
-#include "Data\Elanguage.h"
-#include "Data\ParameterString.h"
+#include "DataController.h"
 
-#include "Tools\LinkList.h"
-#include "Tools\LinkNode.h"
-
-class SystemController
+namespace ccs
 {
-public:
-	SystemController();
-	~SystemController();
+	class SystemController {
+	public:
+		SystemController();
+		SystemController(DataController *dataController);
+		~SystemController();
 
-private:
-};
+	private:
+		DataController * dataController;
+	};
+}
+
+using namespace ccs;
 
 #endif

@@ -1,14 +1,18 @@
 ﻿#ifndef CINEMA_TYPE_H
 #define CINEMA_TYPE_H
 
-class CinemaType
+namespace ccs
 {
-public:
-	CinemaType();
-	~CinemaType();
+	class CinemaType {
+	public:
+		CinemaType();
+		~CinemaType();
 
-private:
+	private:
 
-};
+	};
+}
+
+using namespace ccs;
 
 #endif

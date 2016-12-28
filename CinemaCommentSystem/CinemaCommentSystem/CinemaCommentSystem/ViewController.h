@@ -4,26 +4,32 @@
 #include <iostream>
 #include <cstdlib>
 #include <cstddef>
+#include "SystemController.h"
 #include "View\Views.h"
 
-class ViewController
+namespace ccs
 {
-public:
-	ViewController();
-	~ViewController();
+	class ViewController {
+	public:
+		ViewController();
+		ViewController(SystemController *systemController);
+		~ViewController();
 
-private:
-	Page *pageStack[10];
-	int pageNum;
-	bool isCurrendShowed;
-	Page *currentPage;
+	private:
+		Page *pageStack[10];
+		int pageNum;
+		bool isCurrendShowed;
+		Page *currentPage;
+		SystemController *systemController;
+	public:
+		void UpdateView();
+		void ShowCurrentPage();
+		EPage WaitInput();
+		void GoTo(EPage page);
+		void Back();
+	};
+}
 
-public:
-	void UpdateView();
-	void ShowCurrentPage();
-	EPage WaitInput();
-	void GoTo(EPage page);
-	void Back();
-};
+using namespace ccs;
 
 #endif

@@ -1,10 +1,10 @@
 ﻿#include "Main.h"
-using namespace std;
 
 void main()
 {
-	SystemController *systemController = new SystemController();
-	ViewController * viewController = new ViewController();
+	DataController *dataController = new DataController();
+	SystemController *systemController = new SystemController(dataController);
+	ViewController *viewController = new ViewController(systemController);
 	while (true)
 	{
 		viewController->UpdateView();

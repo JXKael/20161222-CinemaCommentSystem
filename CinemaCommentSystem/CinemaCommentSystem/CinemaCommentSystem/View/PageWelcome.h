@@ -3,16 +3,20 @@
 
 #include "Page.h"
 
-class PageWelcome : public Page
+namespace ccs
 {
-public:
-	PageWelcome();
-	PageWelcome(const int index);
-	~PageWelcome();
-protected:
-	void SetTitle(string title);
-	void Show();
-	EPage WaitInput();
-};
+	class PageWelcome : public Page {
+	public:
+		PageWelcome();
+		PageWelcome(const int index);
+		~PageWelcome();
+	protected:
+		void SetTitle(string title);
+		void Show();
+		EPage WaitInput();
+	};
+}
+
+using namespace ccs;
 
 #endif

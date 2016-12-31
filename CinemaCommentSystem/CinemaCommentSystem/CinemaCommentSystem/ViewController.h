@@ -30,6 +30,4 @@ namespace ccs
 	};
 }
 
-using namespace ccs;
-
 #endif

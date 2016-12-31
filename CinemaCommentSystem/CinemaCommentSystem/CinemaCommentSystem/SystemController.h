@@ -15,9 +15,9 @@ namespace ccs
 
 	private:
 		DataController * dataController;
+	public:
+		bool isAppRuning;
 	};
 }
-
-using namespace ccs;
 
 #endif

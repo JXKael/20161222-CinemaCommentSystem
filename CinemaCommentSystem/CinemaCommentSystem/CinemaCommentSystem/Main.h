@@ -6,7 +6,4 @@
 #include "SystemController.h"
 #include "ViewController.h"
 
-using namespace std;
-using namespace ccs;
-
 #endif // ! MAIN_H

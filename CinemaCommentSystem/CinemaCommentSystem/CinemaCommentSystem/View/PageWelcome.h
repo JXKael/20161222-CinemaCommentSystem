@@ -8,15 +8,16 @@ namespace ccs
 	class PageWelcome : public Page {
 	public:
 		PageWelcome();
+		PageWelcome(const string title);
 		PageWelcome(const int index);
+		PageWelcome(const string title, const int index);
+		PageWelcome(const int index, const string title);
 		~PageWelcome();
-	protected:
+	public:
 		void SetTitle(string title);
 		void Show();
 		EPage WaitInput();
 	};
 }
 
-using namespace ccs;
-
-#endif
+#endif // ! PAGE_WELCOME_H

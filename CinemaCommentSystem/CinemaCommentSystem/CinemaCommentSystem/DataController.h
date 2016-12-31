@@ -22,6 +22,4 @@ namespace ccs
 	};
 }
 
-using namespace ccs;
-
 #endif // ! DATA_CONTROLLER_H

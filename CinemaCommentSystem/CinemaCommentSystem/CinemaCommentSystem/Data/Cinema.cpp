@@ -1,4 +1,5 @@
 ﻿#include "Cinema.h"
+using namespace ccs;
 
 Cinema::Cinema()
 {

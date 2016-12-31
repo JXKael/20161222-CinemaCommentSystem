@@ -79,6 +79,10 @@
     <ClInclude Include="Tools\LinkNode.h" />
     <ClInclude Include="ViewController.h" />
     <ClInclude Include="View\Page.h" />
+    <ClInclude Include="View\PageMainMenu.h" />
+    <ClInclude Include="View\PageManagerMenu.h" />
+    <ClInclude Include="View\PageNormalUserMenu.h" />
+    <ClInclude Include="View\PageQuit.h" />
     <ClInclude Include="View\PageWelcome.h" />
     <ClInclude Include="View\Views.h" />
   </ItemGroup>
@@ -89,6 +93,10 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="SystemController.cpp" />
     <ClCompile Include="ViewController.cpp" />
+    <ClCompile Include="View\PageMainMenu.cpp" />
+    <ClCompile Include="View\PageManagerMenu.cpp" />
+    <ClCompile Include="View\PageNormalUserMenu.cpp" />
+    <ClCompile Include="View\PageQuit.cpp" />
     <ClCompile Include="View\PageWelcome.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -5,7 +5,6 @@
 #include "ELanguage.h"
 #include "CinemaType.h"
 #include "ParameterString.h"
-using namespace std;
 
 namespace ccs 
 {
@@ -36,7 +35,5 @@ namespace ccs
 		inline CinemaType *GetType() { return this->type; }
 	};
 }
-
-using namespace ccs;
 
 #endif

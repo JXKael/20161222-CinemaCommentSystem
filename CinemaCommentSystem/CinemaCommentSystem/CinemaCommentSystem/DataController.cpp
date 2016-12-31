@@ -1,4 +1,5 @@
 #include "DataController.h"
+using namespace ccs;
 
 DataController::DataController()
 {

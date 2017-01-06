@@ -80,6 +80,7 @@
     <ClInclude Include="ViewController.h" />
     <ClInclude Include="View\Page.h" />
     <ClInclude Include="View\PageMainMenu.h" />
+    <ClInclude Include="View\PageManagerAddCinema.h" />
     <ClInclude Include="View\PageManagerMenu.h" />
     <ClInclude Include="View\PageNormalUserMenu.h" />
     <ClInclude Include="View\PageQuit.h" />
@@ -94,6 +95,7 @@
     <ClCompile Include="SystemController.cpp" />
     <ClCompile Include="ViewController.cpp" />
     <ClCompile Include="View\PageMainMenu.cpp" />
+    <ClCompile Include="View\PageManagerAddCinema.cpp" />
     <ClCompile Include="View\PageManagerMenu.cpp" />
     <ClCompile Include="View\PageNormalUserMenu.cpp" />
     <ClCompile Include="View\PageQuit.cpp" />

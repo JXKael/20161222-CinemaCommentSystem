@@ -43,7 +43,7 @@ EPage PageManagerMenu::WaitInput()
 	EPage nextPage;
 	switch (input)
 	{
-	case 1: nextPage = E_PAGE_MAIN_MENU; break;
+	case 1: nextPage = E_PAGE_MANAGER_ADD_CINEMA; break;
 	case 2: nextPage = E_PAGE_MAIN_MENU; break;
 	case 3: nextPage = E_PAGE_MAIN_MENU; break;
 	case 0: nextPage = E_BACK; break;

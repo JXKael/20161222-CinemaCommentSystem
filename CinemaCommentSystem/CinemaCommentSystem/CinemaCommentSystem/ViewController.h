@@ -9,6 +9,8 @@
 
 namespace ccs
 {
+	class Page;
+
 	class ViewController {
 	public:
 		ViewController();

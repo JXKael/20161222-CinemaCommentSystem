@@ -66,6 +66,9 @@
     <ClInclude Include="View\PageManagerMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="View\PageManagerAddCinema.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Data\Cinema.cpp">
@@ -99,6 +102,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="View\PageManagerMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="View\PageManagerAddCinema.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

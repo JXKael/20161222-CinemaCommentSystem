@@ -88,6 +88,12 @@ void ViewController::GoTo(EPage page)
 			currentPage = new PageManagerMenu(pageNum);
 			break;
 		}
+		case E_PAGE_MANAGER_ADD_CINEMA:
+		{
+			// 管理员-> 增加电影
+			currentPage = new PageManagerAddCinema(pageNum);
+			break;
+		}
 		case E_PAGE_QUIT:
 		{
 			// 谢谢使用界面

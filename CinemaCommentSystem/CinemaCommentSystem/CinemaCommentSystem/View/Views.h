@@ -2,10 +2,14 @@
 #define VIEWS_H
 
 #include "View\Page.h"
+
 #include "PageWelcome.h"
 #include "PageMainMenu.h"
+
 #include "PageNormalUserMenu.h"
+
 #include "PageManagerMenu.h"
+#include "PageManagerAddCinema.h"
 
 #include "PageQuit.h"
 
